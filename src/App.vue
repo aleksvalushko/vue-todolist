@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <h1>TodoList</h1>
-    <hr />
-    <todo-lists />
+    <router-view />
   </div>
 </template>
 
 <script>
-import TodoLists from "./components/TodoLists";
-
-export default {
-  components: {
-    TodoLists,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss">
 #app h1 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: dodgerblue;
 }
 </style>

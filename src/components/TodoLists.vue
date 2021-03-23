@@ -30,6 +30,5 @@ export default {
 
 <style lang="scss">
 .todolists {
-  padding: 0 10px;
 }
 </style>

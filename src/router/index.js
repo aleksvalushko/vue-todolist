@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Main from "../components/MainBlock";
 
 Vue.use(VueRouter);
 
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "Home",
-  //   component: Home,
-  // },
+  {
+    path: "/",
+    name: "Main",
+    component: Main,
+  },
+  {
+    path: "/todolist",
+    name: "TodoList",
+    component: () => import("../components/TodoListBlock"),
+  },
   // {
   //   path: "/about",
   //   name: "About",
